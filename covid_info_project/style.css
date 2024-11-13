@@ -1,0 +1,178 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: #45a049;
+    transition: 0.3s;
+}
+
+.form-section {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section input, .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transition: 0.3s;
+}
+
+.comment-box {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.date {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.comment-section {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.comment-box {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.comment-box strong {
+    color: #4CAF50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-box p {
+    margin: 10px 0;
+}
+
+.comment-box .date {
+    font-size: 0.8em;
+    color: gray;
+    text-align: right;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+.comment-section {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.comment-box {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box strong {
+    color: #4CAF50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-box p {
+    margin: 10px 0;
+}
+
+.comment-box .date {
+    font-size: 0.8em;
+    color: gray;
+    text-align: right;
+}

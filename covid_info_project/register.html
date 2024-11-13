@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Registration</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <form action="process_register.php" method="POST" onsubmit="return validateRegisterForm()">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 COVID Info. Stay Safe!</p>
+    </footer>
+
+    <script src="animation.js"></script>
+    <script>
+        function validateRegisterForm() {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            const usernameRegex = /^[a-zA-Z0-9_]{5,15}$/;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+            if (!usernameRegex.test(username)) {
+                alert('Username must be 5-15 characters, only letters, numbers, and underscores allowed.');
+                return false;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email.');
+                return false;
+            }
+
+            if (!passwordRegex.test(password)) {
+                alert('Password must be at least 8 characters long, with one uppercase letter and one number.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
